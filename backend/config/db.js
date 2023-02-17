@@ -5,6 +5,7 @@ console.log(process.env);
 console.log("=======>",process.env.MONGO_URL)
 
 const connectdb = async (err)=>{
+    console.log("hello i am ramjan...");
     try{
        
         const conn = await mongoose.connect (process.env.MONGO_URL)
